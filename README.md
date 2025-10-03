@@ -2,9 +2,7 @@
 
 This is the official implementation of Hi-OSCAR: Hierarchical Open-ser Classifier for Human Activity Recognition.
 
-<div style="background-color: white; padding: 10px; border-radius: 8px;">
-  <img src="overview_image.png" alt="Hi-OSCAR methodology overview" width="600">
-</div>
+![Hi-OSCAR methodology overview](hierarchy_workflow.png)
 
 ## Installation
 
