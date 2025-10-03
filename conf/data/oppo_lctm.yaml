@@ -1,0 +1,36 @@
+
+data_root: "data/clean/opportunity/oppo_lctm_w${evaluation.window_size}"
+X_path: "${data.data_root}/X.npy"
+Y_path:  "${data.data_root}/Y.npy"
+PID_path:  "${data.data_root}/pid.npy"
+
+sample_rate: 33
+task_type: 'classify'
+num_classes: 4 # 4 for locomotive activities, 5 for High-level activities
+
+IMU_positions: ["back", "RUA", "RLA", "LUA", "LLA"]
+sensors: ["accelerometer", "gyroscope", "magnetometer"]
+
+batch_size: 32
+held_one_subject_out: true
+# cross_validate: true
+weighted_loss_fn: true
+dataset_name: 'oppolctm_w10'
+subject_count: -1
+ratio2keep: 1
+channels_per_sensor: 3
+
+label2code: {
+  "standing": 0,
+  "walking": 1,
+  "sitting": 2,
+  "lying": 3,
+  }
+
+old2new_code: {
+  1: 0, # standing
+  2: 1, # walking
+  4: 2, # sitting
+  5: 3, # lying
+  -1 : 4 # NULL
+}

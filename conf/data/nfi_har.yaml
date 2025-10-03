@@ -1,0 +1,45 @@
+data_root: "data/clean/NFI_HAR/NFI_w${evaluation.window_size}" # Path to preprocessed data
+X_path: "${data.data_root}/X.npy"
+Y_path:  "${data.data_root}/Y.npy"
+PID_path:  "${data.data_root}/pid.npy"
+
+sample_rate: 100
+task_type: 'classify'
+num_classes: 19 
+
+IMU_positions: ["back", "arm"]
+sensors: ["accelerometer", "gyroscope", "atm_pressure"]
+
+batch_size: 128
+held_one_subject_out: true
+test_subjects: [3,8]
+weighted_loss_fn: true
+dataset_name: 'NFI_HAR'
+subject_count: -1
+ratio2keep: 1
+channels_per_sensor: 3
+sliding_window_length: 500
+
+sensor_labels: ["back_acc", "back_rot", "arm_acc", "arm_rot", "atm_pressure"]
+
+label2code: {
+    'sitting': 0,
+    'standing': 1,
+    'walking': 2,
+    'running': 3,
+    'cycling': 4,
+    'stair.down': 5,
+    'stair.up': 6,
+    'elevator.down': 7,
+    'elevator.up': 8,
+    'escalator.down': 9,
+    'escalator.up': 10,
+    'dragging': 11,
+    'kicking': 12,
+    'punching': 13,
+    'throwing': 14,
+    'bus': 15,
+    'car': 16,
+    'tram': 17,
+    'train': 18
+}

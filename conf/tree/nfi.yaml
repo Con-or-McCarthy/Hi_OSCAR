@@ -1,0 +1,27 @@
+exclusion_choice: none 
+HAC_root: ./generated_hiers
+
+# Can add ood sets as desired, more than one class in OOD set is permitted
+# Format is 'name of ood set': {'class name 1': class index 1, 'class name 2': class index 2, ...}
+excluded_classes: {
+  'none': {},
+  'sitting': {'sitting': 0},
+  'standing': {'standing': 1},
+  'walking': {'walking': 2},
+  'running': {'running': 3},
+  'cycling': {'cycling': 4},
+  'stair.down': {'stair.down': 5},
+  'stair.up': {'stair.up': 6},
+  'elevator.down': {'elevator.down': 7},
+  'elevator.up': {'elevator.up': 8},
+  'escalator.down': {'escalator.down': 9},
+  'escalator.up': {'escalator.up': 10},
+  'dragging': {'dragging': 11},
+  'kicking': {'kicking': 12},
+  'punching': {'punching': 13},
+  'throwing': {'throwing': 14},
+  'bus': {'bus': 15},
+  'car': {'car': 16},
+  'tram': {'tram': 17},
+  'train': {'train': 18},
+}

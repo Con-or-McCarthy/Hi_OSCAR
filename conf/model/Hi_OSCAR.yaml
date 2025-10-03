@@ -1,0 +1,11 @@
+name: Hi_OSCAR
+
+sensor_separation: true
+weighted: true 
+beta: 10
+embed_dims: 1024
+drop_p: 0.4
+store_entropy: true
+
+optimizer: "Adam"
+

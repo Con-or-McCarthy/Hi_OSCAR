@@ -1,0 +1,21 @@
+## baselines
+## Pre-trained flip-net fine-tuned fine tune all layers
+
+# trained networks
+# model_path: /data/UKBB/SSL/day_sec_10k/logs/models
+load_weights: true
+flip_net_path: "./ssl_weights/mtl_${evaluation.window_size}_best.mdl"
+input_size: 300  
+window_size: 10
+
+# hyper-parametersd
+learning_rate: 1e-4
+num_workers: 6
+patience: 5
+num_epoch: 250
+warmup_epochs: 30 # Set to 0 to not use warmup
+
+# evaluation_name: all_100k
+
+# For if specific folds are to be used (mostly for testing)
+set_folds: false 

@@ -1,0 +1,16 @@
+defaults:
+  - _self_ 
+  - data: nfi_har # pamap, oppo_lctm, nfi_har
+  - evaluation: all
+  - model: Hi_OSCAR
+  - wandb: wandb
+  - tree: nfi 
+
+gpu: -1
+gpu_ids: [0,1,2]
+model_path: ./ssl_weights/tmp_mdl.mdl
+
+# Paths to datasets
+NFI_HAR: ADD_YOUR_PATH_HERE
+OPPO: ADD_YOUR_PATH_HERE
+PAMAP: ADD_YOUR_PATH_HERE

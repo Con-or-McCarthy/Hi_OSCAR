@@ -1,0 +1,8 @@
+.venv
+data/clean/*
+!/data/clean/.gitkeep
+outputs
+__pycache__/
+.qodo
+/wandb/*
+ssl_weights/tmp_mdl.mdl
