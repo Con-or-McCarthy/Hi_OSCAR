@@ -477,9 +477,6 @@ class Hi_OSCAR(nn.Module):
         return predictions
     
 
-
-
-
 class HierarchicalEntropyTracker:
     def __init__(self):
         self.node_entropies: Dict[str, List[float]] = defaultdict(list)

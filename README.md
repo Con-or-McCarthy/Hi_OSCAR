@@ -13,7 +13,7 @@ pip install -r requirements.txt
 ```
 
 Download the datasets you wish to use. Currently the repo supports the following datasets:
-- [NFI_HAR](https://huggingface.co/datasets/NetherlandsForensicInstitute/NFI_FARED)
+- [NFI_FARED](https://huggingface.co/datasets/NetherlandsForensicInstitute/NFI_FARED)
 - [OPPORTUNITY](https://archive.ics.uci.edu/dataset/226/opportunity+activity+recognition)
 - [PAMAP2](https://archive.ics.uci.edu/dataset/231/pamap2+physical+activity+monitoring)
 

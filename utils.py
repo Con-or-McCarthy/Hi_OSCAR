@@ -249,10 +249,6 @@ def load_from_npy(cfg):
             print("Not implemented, using all data")
             idx = np.arange(13)
     
-    elif cfg.data.dataset_name == "NFI_HARmix" or cfg.data.dataset_name == "NFI_HAR_ood":
-        # Just select all sensors for now
-        idx = np.arange(13)
-
     elif cfg.data.dataset_name == "realworld":
         idx = np.arange(45)
 
